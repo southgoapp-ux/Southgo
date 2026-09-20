@@ -1,12 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SouthGo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SouthGo | Moving & Courier Services</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:#07343d;
+  background:#fff;
+}
+
+header{
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #e5eeee;
+}
+
+.logo{
+  font-size:30px;
+  font-weight:800;
+  color:#07343d;
+}
+
+.logo span{
+  color:#00c89b;
+}
+
+nav a{
+  color:#07343d;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:600;
+}
+
+.hero{
+  padding:65px 6%;
+  background:#f2fbf8;
+}
+
+.hero h1{
+  font-size:46px;
+  max-width:720px;
+  margin:0 0 18px;
+}
+
+.hero p{
+  font-size:20px;
+  line-height:1.5;
+  max-width:650px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 20px;
+  border-radius:10px;
+  background:#00b98b;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-dark{
+  background:#07343d;
+}
+
+.services{
+  padding:55px 6%;
+}
+
+.services h2{
+  text-align:center;
+  font-size:32px;
+}
+
+.grid{
+  max-width:1100px;
+  margin:30px auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.card{
+  border:1px solid #dce8e6;
+  border-radius:14px;
+  padding:24px;
+}
+
+.card h3{
+  margin-top:0;
+}
+
+.account{
+  padding:55px 6%;
+  background:#f7faf9;
+  text-align:center;
+}
+
+.account-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:25px;
+}
+
+.contact{
+  padding:50px 6%;
+  background:#07343d;
+  color:white;
+  text-align:center;
+}
+
+.contact a{
+  color:white;
+}
+
+footer{
+  padding:25px;
+  text-align:center;
+  color:#66797c;
+}
+
+@media(max-width:760px){
+  header{
+    align-items:flex-start;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
+
 <body>
-<h1>SouthGo</h1>
-<p>Moving and same-day delivery made simple.</p>
+
+<header>
+
+<div class="logo">
+South<span>Go</span>
+</div>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#account">Account</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<h1>Moving and same-day delivery made simple.</h1>
+
+<p>
+SouthGo provides reliable courier, house moving,
+office moving and man-with-a-van services across London.
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="#quote">
+Get a Quote
+</a>
+
+<a class="btn btn-dark"
+href="tel:+447440227500">
+Call SouthGo
+</a>
+
+</div>
+
+</section>
+
+
+<section class="services" id="services">
+
+<h2>How can SouthGo help?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Same-Day Courier</h3>
+<p>
+Fast collection and delivery of parcels and items.
+</p>
+</div>
+
+<div class="card">
+<h3>House Moves</h3>
+<p>
+Flexible moving services for houses, flats and individual items.
+</p>
+</div>
+
+<div class="card">
+<h3>Office Moves</h3>
+<p>
+Reliable moving support for businesses and workplaces.
+</p>
+</div>
+
+<div class="card">
+<h3>Man With a Van</h3>
+<p>
+Van and driver service when you need extra moving help.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="account" id="account">
+
+<h2>SouthGo Accounts</h2>
+
+<p>
+Book deliveries, manage moves or work with SouthGo.
+</p>
+
+<div class="account-buttons">
+
+<a class="btn" href="#">
+Customer Login
+</a>
+
+<a class="btn" href="#">
+Business Account
+</a>
+
+<a class="btn btn-dark" href="#">
+Drive With SouthGo
+</a>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="quote">
+
+<h2>Get a Quote</h2>
+
+<p>
+Need to move or send something?
+Contact SouthGo today.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a class="btn"
+href="https://wa.me/447440227500">
+WhatsApp
+</a>
+
+<a class="btn"
+href="tel:+447440227500">
+07440 227500
+</a>
+
+</div>
+
+<p>
+<a href="mailto:info@southgo.co.uk">
+info@southgo.co.uk
+</a>
+</p>
+
+</section>
+
+</main>
+
+<footer>
+SouthGo · Moving & Courier Services<br>
+Niombor Limited · Company No. 09193434
+</footer>
+
 </body>
 </html>
