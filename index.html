@@ -24,6 +24,7 @@ header{
   justify-content:space-between;
   align-items:center;
   border-bottom:1px solid #e5eeee;
+  background:#fff;
 }
 
 .logo{
@@ -57,7 +58,7 @@ nav a{
 .hero p{
   font-size:20px;
   line-height:1.5;
-  max-width:650px;
+  max-width:700px;
 }
 
 .buttons{
@@ -81,11 +82,11 @@ nav a{
   background:#07343d;
 }
 
-.services{
+.section{
   padding:55px 6%;
 }
 
-.services h2{
+.section h2{
   text-align:center;
   font-size:32px;
 }
@@ -102,16 +103,77 @@ nav a{
   border:1px solid #dce8e6;
   border-radius:14px;
   padding:24px;
+  background:#fff;
 }
 
 .card h3{
   margin-top:0;
 }
 
+.coverage{
+  background:#f2fbf8;
+}
+
+.coverage-wrap{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.coverage h2{
+  text-align:left;
+  margin-top:0;
+}
+
+.coverage-list{
+  line-height:1.8;
+  font-size:17px;
+}
+
+.map-card{
+  background:white;
+  border:1px solid #d4ebe5;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 8px 24px rgba(7,52,61,.08);
+}
+
+.map-title{
+  font-size:25px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.area-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:20px;
+}
+
+.area-tag{
+  background:#e5faf4;
+  color:#07343d;
+  border-radius:20px;
+  padding:8px 12px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.airports{
+  margin-top:22px;
+  padding:18px;
+  border-radius:12px;
+  background:#07343d;
+  color:white;
+}
+
 .account{
-  padding:55px 6%;
-  background:#f7faf9;
   text-align:center;
+  background:#fff;
 }
 
 .account-buttons{
@@ -140,9 +202,6 @@ footer{
 }
 
 @media(max-width:760px){
-  header{
-    align-items:flex-start;
-  }
 
   nav{
     display:none;
@@ -154,6 +213,14 @@ footer{
 
   .grid{
     grid-template-columns:1fr;
+  }
+
+  .coverage-wrap{
+    grid-template-columns:1fr;
+  }
+
+  .coverage h2{
+    text-align:center;
   }
 }
 </style>
@@ -169,8 +236,9 @@ South<span>Go</span>
 
 <nav>
 <a href="#services">Services</a>
+<a href="#coverage">Coverage</a>
 <a href="#account">Account</a>
-<a href="#contact">Contact</a>
+<a href="#quote">Get a Quote</a>
 </nav>
 
 </header>
@@ -182,8 +250,9 @@ South<span>Go</span>
 <h1>Moving and same-day delivery made simple.</h1>
 
 <p>
-SouthGo provides reliable courier, house moving,
-office moving and man-with-a-van services across London.
+Reliable courier, house moving, office moving and
+man-with-a-van services across South London, Surrey
+and West Sussex.
 </p>
 
 <div class="buttons">
@@ -192,8 +261,7 @@ office moving and man-with-a-van services across London.
 Get a Quote
 </a>
 
-<a class="btn btn-dark"
-href="tel:+447440227500">
+<a class="btn btn-dark" href="tel:+447440227500">
 Call SouthGo
 </a>
 
@@ -202,35 +270,35 @@ Call SouthGo
 </section>
 
 
-<section class="services" id="services">
+<section class="section" id="services">
 
 <h2>How can SouthGo help?</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Same-Day Courier</h3>
+<h3>📦 Same-Day Courier</h3>
 <p>
 Fast collection and delivery of parcels and items.
 </p>
 </div>
 
 <div class="card">
-<h3>House Moves</h3>
+<h3>🏠 House Moves</h3>
 <p>
 Flexible moving services for houses, flats and individual items.
 </p>
 </div>
 
 <div class="card">
-<h3>Office Moves</h3>
+<h3>🏢 Office Moves</h3>
 <p>
 Reliable moving support for businesses and workplaces.
 </p>
 </div>
 
 <div class="card">
-<h3>Man With a Van</h3>
+<h3>🚐 Man With a Van</h3>
 <p>
 Van and driver service when you need extra moving help.
 </p>
@@ -241,7 +309,94 @@ Van and driver service when you need extra moving help.
 </section>
 
 
-<section class="account" id="account">
+<section class="section coverage" id="coverage">
+
+<div class="coverage-wrap">
+
+<div>
+
+<h2>Our Service Area</h2>
+
+<p class="coverage-list">
+
+<strong>South London • Surrey • West Sussex</strong>
+
+<br><br>
+
+SouthGo covers SW and SE postcodes and key areas across
+South London and the surrounding counties.
+
+</p>
+
+<div class="area-tags">
+
+<span class="area-tag">SW Postcodes</span>
+<span class="area-tag">SE Postcodes</span>
+<span class="area-tag">Croydon</span>
+<span class="area-tag">Bromley</span>
+<span class="area-tag">Orpington</span>
+<span class="area-tag">Sidcup</span>
+<span class="area-tag">Lewisham</span>
+<span class="area-tag">Greenwich</span>
+<span class="area-tag">Bexley</span>
+<span class="area-tag">Wandsworth</span>
+<span class="area-tag">Lambeth</span>
+<span class="area-tag">Merton</span>
+<span class="area-tag">Sutton</span>
+<span class="area-tag">Richmond</span>
+<span class="area-tag">Kingston upon Thames</span>
+<span class="area-tag">Esher</span>
+<span class="area-tag">Epsom</span>
+<span class="area-tag">Guildford</span>
+<span class="area-tag">Redhill</span>
+<span class="area-tag">Reigate</span>
+<span class="area-tag">Crawley</span>
+<span class="area-tag">Horsham</span>
+
+</div>
+
+</div>
+
+
+<div class="map-card">
+
+<div class="map-title">
+📍 SouthGo Coverage
+</div>
+
+<p>
+From local deliveries across South London to house
+and office moves throughout Surrey and West Sussex,
+SouthGo keeps you moving.
+</p>
+
+<div class="airports">
+
+<strong>✈ Airport Coverage</strong>
+
+<p>
+Gatwick Airport<br>
+Heathrow Airport
+</p>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn" href="#quote">
+Check Your Area
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section account" id="account">
 
 <h2>SouthGo Accounts</h2>
 
@@ -301,9 +456,15 @@ info@southgo.co.uk
 
 </main>
 
+
 <footer>
-SouthGo · Moving & Courier Services<br>
+
+SouthGo · Moving & Courier Services
+
+<br>
+
 Niombor Limited · Company No. 09193434
+
 </footer>
 
 </body>
